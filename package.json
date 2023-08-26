@@ -1,8 +1,8 @@
 {
-  "name": "nextjs-sanity-multi-portfolio-kickstart",
+  "name": "abron-photography",
   "version": "1.0.0",
-  "author": "Judah Sullivan",
-  "description": "Fullstack Kick-Starter multi-page portfolio-blog built with Sanity and Nextjs.",
+  "author": "Abron Lewis",
+  "description": "Abron Lewis Photography Website",
   "license": "MIT",
   "scripts": {
     "dev": "next dev",
