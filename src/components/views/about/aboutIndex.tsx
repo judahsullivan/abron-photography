@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { Heading, useBreakpointValue, Stack, Image, Text } from '@chakra-ui/react';
+import { Heading, useBreakpointValue, Stack, Image, Text, Skeleton } from '@chakra-ui/react';
 import PageLayout from '@/components/layouts/pageLayout';
 import { PageLoad } from '../../../../types';
 // Here we have used react-icons package for the icons
@@ -47,9 +47,12 @@ export default function AboutIndex({
         </Heading>
 
         <Image
+          w="full"
+          h="full"
           alt={'aboutImage'}
           src={aboutPage.image}
           rounded={"lg"}
+          fallback={<Skeleton w="full" h="full" />}
         />
         <Text maxW="550px" fontSize="xl" textAlign="center" color="gray.500">
           {aboutPage.description}

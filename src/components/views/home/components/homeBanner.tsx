@@ -115,7 +115,10 @@ export default function HeroSection({
             objectFit="cover"
             alt={title}
             src={image}
-            fallback={<Skeleton />}
+            fallback={<Skeleton
+              w="full"
+              h="full"
+            />}
           />
         </Box>
       </Flex >
