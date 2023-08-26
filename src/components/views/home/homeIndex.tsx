@@ -3,7 +3,7 @@ import { ClientPayLoad, HomePageLoad, PostPayLoad } from "../../../../types";
 import HomeBanner from "./components/homeBanner";
 import RecentArticleBanner from "./components/recentBanner";
 import RecentClientBanner from "./components/recentClientBanner";
-import { Button, Divider, Stack } from "@chakra-ui/react";
+import { Box, Button, Divider, Stack } from "@chakra-ui/react";
 import Header from "@/components/shared/headers/header";
 import { MotionBox } from "@/components/animations/motionChakra";
 import Link from "next/link";
@@ -45,6 +45,9 @@ export default function HomeIndex({
       />
       <Divider mt={10} mb={5} />
       <Stack
+        mx="auto"
+        textAlign={'start'}
+        maxW="5xl"
       >
 
         <Header>Most Recent Articles</Header>

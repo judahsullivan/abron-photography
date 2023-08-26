@@ -5,6 +5,8 @@ import {
   Stack,
   useColorModeValue,
   Flex,
+  Image,
+  Skeleton,
 } from '@chakra-ui/react'
 import { MotionBox, MotionImage } from '@/components/animations/motionChakra';
 import { ChakraLink } from '@/components/custom/chakraLink';
@@ -45,8 +47,10 @@ export default function ArticleCard({
         pos={'relative'}
         overflow={'hidden'}
       >
-        <MotionImage
+        <Image
           src={`${mainImage}`}
+          as={MotionImage}
+          fallback={<Skeleton />}
           w="full"
           h="200px"
           objectFit="cover"
@@ -54,7 +58,6 @@ export default function ArticleCard({
 
             scale: 1.1,
           }}
-          fill
           alt="Example"
         />
       </Box>
