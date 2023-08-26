@@ -48,6 +48,7 @@ export const getStaticProps: GetStaticProps<HomeProps, Query> = async (ctx) => {
       ...data,
       draftMode: draftMode,
       token: draftMode ? readToken : '',
-    }
+    },
+    revalidate: 10,
   }
 }

@@ -40,6 +40,7 @@ export const getStaticProps: GetStaticProps<BlogProps, Query> = async (ctx) => {
       draftMode,
       token: draftMode ? readToken : '',
     },
+    revalidate: 10,
   }
 }
 

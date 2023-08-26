@@ -45,5 +45,6 @@ export const getStaticProps: GetStaticProps<GalleryClientProps> = async (ctx) =>
       draftMode: draftMode,
       token: draftMode ? readToken : '', // Use the token value directly if draftMode is true
     },
+    revalidate: 10
   };
 };
