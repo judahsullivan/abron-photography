@@ -47,12 +47,9 @@ export default function AboutIndex({
         </Heading>
 
         <Image
-          w="full"
-          h="full"
-          alt={'aboutImage'}
           src={aboutPage.image}
           rounded={"lg"}
-          fallback={<Skeleton w="full" h="full" />}
+          fallback={<Skeleton />}
         />
         <Text maxW="550px" fontSize="xl" textAlign="center" color="gray.500">
           {aboutPage.description}
