@@ -1,4 +1,4 @@
-import { Container, Divider, SimpleGrid } from "@chakra-ui/react";
+import { Stack, Divider, SimpleGrid } from "@chakra-ui/react";
 import GalleryBanner from "./components/galleryBanner";
 import PageLayout from "@/components/layouts/pageLayout";
 import { ClientPayLoad, PageLoad } from "../../../../types";
@@ -34,8 +34,9 @@ export default function GalleryIndex({
         mt={5}
       />
       {/* Image Section*/}
-      <Container
+      <Stack
         maxW="6xl"
+        align="center"
       >
         <SimpleGrid
           columns={[1, 2, 3, 4]}
@@ -52,7 +53,7 @@ export default function GalleryIndex({
             />
           ))}
         </SimpleGrid>
-      </Container>
+      </Stack>
     </PageLayout>
 
   )

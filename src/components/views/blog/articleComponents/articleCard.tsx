@@ -47,7 +47,11 @@ export default function ArticleCard({
       >
         <MotionImage
           src={`${mainImage}`}
+          w="full"
+          h="200px"
+          objectFit="cover"
           whileHover={{
+
             scale: 1.1,
           }}
           fill

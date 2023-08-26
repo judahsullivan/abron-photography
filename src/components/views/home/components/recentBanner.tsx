@@ -36,9 +36,6 @@ export default function RecentArticleBanner({ title, description, publishedAt, h
       p={{ base: 5, md: 10 }}
       mx="auto"
     >
-      <Header>
-        Most Recent Post
-      </Header>
       <VStack py={8} spacing={8}>
         <Fragment >
           <Flex direction="column" gap={4} p={4}>
@@ -59,7 +56,6 @@ export default function RecentArticleBanner({ title, description, publishedAt, h
             </Box>
             <Box>
               <Stack justify="space-between" direction={{ base: 'column', sm: 'row' }}>
-
                 <HStack
                   as={ChakraLink}
                   href={href}
@@ -83,23 +79,6 @@ export default function RecentArticleBanner({ title, description, publishedAt, h
           <Divider />
         </Fragment>
       </VStack>
-      <MotionBox
-        align="center"
-        whileHover={{
-          scale: 1.04
-        }}
-      >
-        <Button
-          as={Link}
-          href={'/blog'}
-          passHref
-          colorScheme='purple'
-          rightIcon={<MdAdsClick />}
-        >
-          All Articles
-        </Button>
-
-      </MotionBox>
     </Stack>
   );
 };

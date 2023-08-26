@@ -5,11 +5,8 @@ import {
   Stack,
   useColorModeValue,
   Flex,
-  HStack,
-  Icon,
 } from '@chakra-ui/react'
 import { MotionBox, MotionImage } from '@/components/animations/motionChakra';
-import { BiComment, BiLike } from 'react-icons/bi'
 import { ChakraLink } from '@/components/custom/chakraLink';
 import { PostPayLoad } from '../../../../../types';
 import { Fragment } from 'react';
